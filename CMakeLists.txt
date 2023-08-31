@@ -10,8 +10,8 @@ project(
     LANGUAGES CXX
 )
 
-string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wl,-rpath,'$ORIGIN'")
-string(APPEND CMAKE_C_FLAGS " -Wall -Wextra")
+string(APPEND CMAKE_CXX_FLAGS " -Wall -W4 -Wl,-rpath,'$ORIGIN'")
+string(APPEND CMAKE_C_FLAGS " -Wall -W4")
 
 # lib/Linux-x86_64
 # lib/Linux-aarch64
