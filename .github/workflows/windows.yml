@@ -42,4 +42,4 @@ jobs:
           PKG_CONFIG_PATH: D:\a\piper-phonemize\piper-phonemize\espeak-ng/lib/pkgconfig/
         run: cd piper-phonemize && cmake -Bbuild 
       - name: make-piper
-        run: cd piper-phonemize && cmake --build build --config ${{ matrix.config }} -DCMAKE_CXX_FLAGS="/W4"
+        run: cd piper-phonemize && cmake --build build --config ${{ matrix.config }} --DCMAKE_CXX_FLAGS="/W4"
