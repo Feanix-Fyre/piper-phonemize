@@ -14,8 +14,8 @@ project(
 set(CMAKE_INSTALL_RPATH "$ORIGIN")
 
 # Add custom flags for compiler warnings
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -W4")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -W4")
 
 # lib/Linux-x86_64
 # lib/Linux-aarch64
