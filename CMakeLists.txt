@@ -10,8 +10,12 @@ project(
     LANGUAGES CXX
 )
 
-string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wl,-rpath,$ORIGIN")
-string(APPEND CMAKE_C_FLAGS " -Wall -Wextra")
+# Set rpath to $ORIGIN for runtime library path
+set(CMAKE_INSTALL_RPATH "$ORIGIN")
+
+# Add custom flags for compiler warnings
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra")
 
 # lib/Linux-x86_64
 # lib/Linux-aarch64
